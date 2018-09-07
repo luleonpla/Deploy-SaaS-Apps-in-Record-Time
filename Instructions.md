@@ -130,4 +130,4 @@ In this tutorial, you learn how to integrate Salesforce with Azure Active Direct
 59. In the Azure portal, on the Salesforce application integration page, click Single sign-on.
 47.	On the Test single sign-on with Salesforce section, click Test.
 48.	Click on Sign in as current user. 
-49.	You will be redirected to the Salesforce sign-in page. Click on Log in using SSO Ignite demo. If you don’t see it, it can be located at the bottom of the page.
+49.	You will be redirected to the Salesforce sign-in page. Click on Log in using SSO Ignite demo. If you don’t see it, it can be located at the bottom of the page. AH
