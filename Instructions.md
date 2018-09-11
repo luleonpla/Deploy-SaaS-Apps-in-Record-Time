@@ -23,13 +23,13 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 
 1.	[Sign up](https://developer.salesforce.com/signup) for a Salesforce developer instance using a valid email address (you can use the same email address for your username).
 2.	Go to your email inbox to verify the account. After signing in for the first time, Salesforce may send an extra verification code to your email.
-3.	Open a new tab and sign into the same Salesforce admin account. On the top right corner of the page, click the view profile icon, and then click **Settings**
+3.	Open a new tab and sign into the same Salesforce admin account. On the top right corner of the page, click the view profile icon, and then click **Settings**.
 4.	On the left navigation pane, click **My Personal Information** to expand the related section, and then click **Reset My Security Token**.
 5.	On the Reset Security Token page, click **Reset Security Token button**.
 6.	Check the email inbox associated with this admin account. Look for an email from Salesforce.com that contains the new security token. Save the security token. You will need it later.
 7.	Go back to the homepage by clicking on **home** at the top. On the left navigation pane, click **Company settings** to expand the related section, and then click **My Domain**.
 8.	On My Domain, enter a domain name and check whether it’s available.
-9.	Click on Register Domain. It can take few minutes to update its naming. You will receive an email when it’s done. The domain follows the pattern: *https://<subdomain>-dev-ed.my.salesforce.com*
+9.	Click on Register Domain. It can take few minutes to update its naming. You will receive an email when it’s done. The domain follows the pattern: *https://<subdomain>-dev-ed.my.salesforce.com*.
 
 
 ## Task 2: Add Salesforce from the gallery
@@ -41,7 +41,7 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 
 ## Task 3: Assign a test user to the application
 
-14.	In the menu on the left, click **Users and groups.**
+14.	In the menu on the left, click **Users and groups**.
 15.	Click the **Add user** button. Then select **Users** on Add Assignment dialog.
 16.	On Users dialog, select the test user from the Users list. Click the **Select** button. 
 17.	On the **Select Role** dialog, select Chatter Free User. Click the **Select** button. 
@@ -60,11 +60,11 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 24.	Under the Mappings section, select **Synchronize Azure Active Directory Users to Salesforce**.
 25.	In the Attribute Mappings section at the bottom of the dialog, click on Add New Mapping.
 26.	On Edit Attribute dialog, perform the following actions
-	- In the **Mapping type**, select Direct
-	- In the **Source attribute**, select userPrincipalName
-	- In the **Target attribute**, select FederationIdentifier
+	- In the **Mapping type**, select Direct.
+	- In the **Source attribute**, select userPrincipalName.
+	- In the **Target attribute**, select FederationIdentifier.
 27.	Click Ok.
-28.	Click Save at the top of the Attribute Mapping section
+28.	Click Save at the top of the Attribute Mapping section.
 29.	Close the attribute mapping dalog to go back to the Provisioning configuration page. 
 30.     Set the provisioning status toggle to on, to enable the Azure AD provisioning for Salesforce. 
 
@@ -73,13 +73,14 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 
 30.	In the Azure portal, on the Salesforce application integration page, click Single sign-on.
 31.	On the Select a single sign-on method, select SAML to enable single sign-on.
-32.	In step 1 (Basic SAML configuration), click the pen to edot the Sign on URL and Identifier:
+32.	Click on **Try out our new experience** on top of the page to enable the new experience for configuring SAML based applications.
+33.	In step 1 (Basic SAML configuration), click the pen to edit the Sign on URL and Identifier:
 	- In the **Sign-on URL** textbox, type the value using the following pattern:
-	*https://<subdomain>-dev-ed.my.salesforce.com.*	
+	*https://<subdomain>-dev-ed.my.salesforce.com*.	
 	- In the **Identifier** textbox, type the value using the following pattern:
-	*https://<subdomain>-dev-ed.my.salesforce.com*
+	*https://<subdomain>-dev-ed.my.salesforce.com*.
 
-33.	In step 3 (SAML Signing Cerficiate), click on download certificate. You will import this certificate later in Salesforce.
+34.	In step 3 (SAML Signing Cerficiate), click on download certificate. You will import this certificate later in Salesforce.
 
 
 ## Task 6: Set up Salesforce for single sign-on
@@ -93,12 +94,12 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 41.	On the SAML Single Sign-On Setting Edit page, make the following configurations:
 	- For the **Name**, type SSO Ignite demo.
 	- In the **Issuer**, paste the value of SAML Entity ID (you can find this by clicking **view step-by-step" instructions** in the Azure Portal SSO configuration page and copying the entity id from step 5).
-	- In the **Entity Id**, type your Salesforce domain name using the following pattern: *https://<subdomain>-dev-ed.my.salesforce.com*
+	- In the **Entity Id**, type your Salesforce domain name using the following pattern: *https://<subdomain>-dev-ed.my.salesforce.com*.
 	- To upload the Identity Provider Certificate, click **Choose File** to browse and select the certificate file, which you have downloaded from Azure portal.
-	- As **SAML Identity Type**, choose: Assertion contains the Federation ID from the User object
+	- As **SAML Identity Type**, choose: Assertion contains the Federation ID from the User object.
 	- For **SAML Identity Location**, select Identity is in the NameIdentifier element of the Subject statement.
 	- For **Service Provider Initiated Request Binding**, select HTTP Redirect.
-	- In **Identity Provider Login URL**, paste the value of Single Sign-On Service URL, which you have copied from Azure portal (step 1 of the SSO configuration page) 
+	- In **Identity Provider Login URL**, paste the value of Single Sign-On Service URL, which you have copied from Azure portal (step 1 of the SSO configuration page>).
 	
 42.	Finally, click Save to apply your SAML single sign-on settings.
 43.	On the left navigation pane in Salesforce, click Company Settings to expand the related section, and then click My Domain.
@@ -114,11 +115,11 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 
 ## Optional tasks
 
-### Create a conditional access policies for blocking all users to access Salesforce
+### Task 8: Create a conditional access policies for blocking all users to access Salesforce
 
-50. In the Azure portal, on the Salesforce application integration page, click **Conditional Access.**
+50. In the Azure portal, on the Salesforce application integration page, click **Conditional Access**.
 51. At the top of the blade, click on **New Policy**.
-52. In the Name field enter: *Blocking all users to access Salesforce*
+52. In the Name field enter: *Blocking all users to access Salesforce*.
 53. Under Assignments, select **Users and Groups**. Then, select **Include - All Users**.
 54. Click **done**.
 55. Under Access Control, select **Grant**. Then, select **Block access**.
@@ -126,9 +127,43 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 57. Under Enable policy, select **On**.
 58. Click on **Create**, to create the policy.
 
-### Test conditional access policy
+### Task 9: Test conditional access policy
 
 59. In the Azure portal, on the Salesforce application integration page, click Single sign-on.
-47.	On the Test single sign-on with Salesforce section, click Test.
-48.	Click on Sign in as current user. 
-49.	You will be redirected to the Salesforce sign-in page. Click on Log in using SSO Ignite demo. If you don’t see it, it can be located at the bottom of the page.
+60. On the Test single sign-on with Salesforce section, click Test.
+70. Click on Sign in as current user. 
+71. You will be redirected to the Salesforce sign-in page. Click on Log in using SSO Ignite demo. If you don’t see it, it can be located at the bottom of the page.
+
+### Task 10: Disable conditional access policy
+72. In the Azure portal, on the Salesforce application integration page, click **Conditional Access**.
+73. Click on the *Blocking all users to access Salesforce*.
+74. Under enable policy, select **Off.**
+75. Click on **Save**.
+
+### Task 11: Create a group to configure user self-service application assignment 
+
+76. In the Azure portal, on the left navigation panel, click **Azure Active Directory** icon.
+77. Click on Groups from the menu to go to the groups configuration page.
+78. Click on **New group** to create a group.
+79. On the group dialog, configure the following:
+	- In the **Group type**, select Security.
+	- In the **Group name**, type *Salesforce self-service*.
+	- In the **Membership type**, select *Assigned*.
+
+### Task 12: Configure user self-service application assignment
+
+80. On the Azure portal, on the Salesforce application integration page, click Self-service.
+81. On the Self-service page, configure the following:
+	- In the **Allow users to request access to this application?** toggle, select Yes.
+	- In the **To which group should assigned users be added?**, select the group *Salesforce self-service*. Users requesting access to this aplication will be added to this group.
+	- Click on **Save**.
+	
+Once you complete Self-service application configuration, users can navigate to their [Application Access Panel](https://myapps.microsoft.com) and click the **Add** button to find the apps to which you have enabled Self-service access.
+
+## Next steps
+
+Get more information about single sign-on, provisioning and conditional access
+
+- [Azure AD Application Management Documentation](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/)
+- [Managing user account provisioning for enterprise apps in the Azure portal](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-automatic-user-provisioning-portal)
+- [Azure AD Conditional Access Documentation](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/)
