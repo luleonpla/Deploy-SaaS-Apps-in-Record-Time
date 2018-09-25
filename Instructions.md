@@ -23,7 +23,7 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 
 ## Task 1: Create a Salesforce developers account
 
-1.	[Sign up](https://developer.salesforce.com/signup) for a Salesforce developer instance using a valid email address (you can use the same email address for your username). **We recommend using Microsoft Edge for any configuration in Salesforce**.
+1.	[Sign up](https://developer.salesforce.com/signup) for a Salesforce developer instance using a valid email address (you can use the same email address for your username). **We recommend using Microsoft Edge for any configuration in Salesforce**. Click on the Windows icon in the bottom left of the screen to search for Microsoft Edge.
 2.	Open a new tab and go to your email inbox to verify the account. After signing in for the first time, Salesforce may send an extra verification code to your email.
 3.	Open a new tab and sign into the same Salesforce admin account. On the top right corner of the page, click the view profile icon, and then click **Settings**.
 4.	On the left navigation pane, click **My Personal Information** to expand the related section, and then click **Reset My Security Token**.
