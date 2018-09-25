@@ -16,6 +16,8 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 
 •	Valid email account
 
+- You're using Microsoft Edge for following the steps in Salesforce
+
 
 # Integrate Salesforce with Azure Active Directory for Single sign-on
 
@@ -34,7 +36,7 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 
 ## Task 2: Add Salesforce from the gallery
 
-10.	Using the Office 365 credentials provided in the Resource tab of this page, access the [Azure portal](https://portal.azure.com/). Then, on the left navigation panel, click **Azure Active Directory** icon.
+10.	Using the Office 365 credentials provided in the **Resource tab** of this page (Instructions), access the [Azure portal](https://portal.azure.com/). **Don't use your own O365 credentials to access Azure portal**. Then, on the left navigation panel, click **Azure Active Directory** icon. 
 11.	Click **Enterprise applications** from the menu to go to the Enterprise Applications - All Applications page. 
 12.	Click the **New application** button at the top of the page.
 13.	In the search box below the Add gallery section, type Salesforce and select it from the result panel (do not select the Sandbox version). Then click the **Add** button to add the application. It may take a few seconds to create your application. 
