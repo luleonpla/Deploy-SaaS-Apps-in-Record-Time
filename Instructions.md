@@ -66,7 +66,8 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 27.	Click Ok.
 28.	Click Save at the top of the Attribute Mapping section.
 29.	Close the attribute mapping dalog to go back to the Provisioning configuration page. 
-30.     Under the Settings section, set the provisioning status toggle to **ON**, to enable the Azure AD provisioning for Salesforce. 31. Click Save. 
+30.     Under the Settings section, set the provisioning status toggle to **ON**, to enable the Azure AD provisioning for Salesforce.
+31. Click Save. 
 
 
 ## Task 5: Configure single sign-on for Azure AD
