@@ -87,8 +87,8 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 38. Click on **Add new claim**. In the **Manage user claims** page, provide the following:
 	- In **Name** type *DemoOwner*
 	- In **Source**, select **Transformation**.
-	- In **Transformation**, select ToUpper().
-	- In **Parameter 1**, select *user.displayname*.
+	- In **Transformation**, select **ToUpper()**.
+	- In **Parameter 1**, select **user.displayname**.
 	
 39. Click Save. Then close the User claims page.
 40.	In step 3 (SAML Signing Certificate), click on download Federation Metadata XML. Save this XML file on your computer, you will use it later in Salesforce.
