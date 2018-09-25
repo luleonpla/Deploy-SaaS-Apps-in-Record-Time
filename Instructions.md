@@ -89,7 +89,7 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 39.	Scroll down to the **SETTINGS** in the left navigation pane, click **Identity** to expand the related section. Then click Single Sign-On Settings. If you don't see this option, click on the Setup under settings icon on the top right corner of the page.
 40.	On the Single **Sign-On Settings page**, click the **Edit** button.
 41.	Select **SAML Enabled**, and then click Save.
-42.	Click **New from metadata XML** to configure SAML single sign-on settings. 
+42.	Click **New from metadata file** to configure SAML single sign-on settings. 
 43. Choose the Federation Metadata XML you have downloaded from Azure portal. Click **Create**.
 44.	On the SAML Single Sign-On Setting Edit page, make the following configurations:
 	- For the **Name**, type *SSO Ignite demo*.
