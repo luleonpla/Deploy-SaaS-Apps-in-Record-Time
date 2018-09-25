@@ -16,7 +16,7 @@ In this tutorial, you will learn how to integrate Salesforce with Azure Active D
 
 •	Valid email account
 
-- You're using Microsoft Edge for following the steps in Salesforce
+•	You're using Microsoft Edge for following the steps in Salesforce
 
 
 # Integrate Salesforce with Azure Active Directory for Single sign-on
